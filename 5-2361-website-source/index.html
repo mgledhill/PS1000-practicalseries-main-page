@@ -47,6 +47,8 @@ This is a complete summary of all software modifications.
 
 Date          Issue        Author         Reason for Modification
 *******************************************************************************
+05 Jun 2017   P11          M. Gledhill    Content updated for VCS website
+
 31 May 2017   P10          M. Gledhill    Migration to Git VCS
                                           FIRST PUBLISHED COMMIT
                                           Based on PS(LIVE-non VCS) P06.02
@@ -146,7 +148,7 @@ Date          Issue        Author         Reason for Modification
             <div class="rg-row">                                <!-- Start of cover row -->
                  <div class="rg-col rg-span1-5">
                     <aside class="aside-left aside-left-rev" style="margin-top: 1.6rem;">            <!-- Start of left side bar -->
-                        <img src="1000-home/11-resources/02-images/02-build-status/build-p10-tq-min.svg"><!-- Build status -->
+                        <img src="1000-home/11-resources/02-images/02-build-status/build-badge.svg"><!-- Build status -->
                     </aside>                                    <!-- End of left side bar   -->
                 </div>                                          <!-- End of Left column -->
                 <div class="rg-col rg-span3-5">                 <!-- Start of Cover area (centre column) -->
@@ -162,7 +164,7 @@ Date          Issue        Author         Reason for Modification
                 </div>                                          <!-- End of cover area (centre column -->
                 <div class="rg-col rg-span1-5">                 <!-- Start of right column  -->
                     <aside class="aside-right-rev" style="margin-top: 1.6rem">             <!-- Start of right side bar -->
-<!--REVISION-->         <p>Rev: 1000&nbsp;&mdash;&nbsp;P10</p>   <!-- Revision information    -->
+<!--REVISION-->         <p>Rev: 1000&nbsp;&mdash;&nbsp;P11</p>   <!-- Revision information    -->
                     </aside>                                    <!-- End of right side bar   -->
                 </div>                                          <!-- End of right column  -->
             </div>                                              <!-- End of cover row -->
@@ -193,6 +195,17 @@ Date          Issue        Author         Reason for Modification
                     <ul class="toc-line">                       <!-- Start of full width TOC (level 1) -->
                         <li><a class="js--sc-010000" href="1001-webdevelopment/index.html">  <!-- TOC link start -->
                                <div class="toc-lev"><span class="toc-lev1-num"></span><span class="toc-lev1-text">A website development template&nbsp;&mdash;&nbsp;and how to use it</span></div></a>
+                        </li>                                   <!-- TOC link end   -->
+                    </ul>                                       <!-- End of full width TOC (level 1) -->
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - VCS
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-line">                       <!-- Start of full width TOC (level 1) -->
+                        <li><a class="js--sc-010000" href="1002-vcs/index.html">  <!-- TOC link start -->
+                               <div class="toc-lev"><span class="toc-lev1-num"></span><span class="toc-lev1-text">Understanding Brackets-Git and GitHub version control</span></div></a>
                         </li>                                   <!-- TOC link end   -->
                     </ul>                                       <!-- End of full width TOC (level 1) -->
 
@@ -266,19 +279,10 @@ Date          Issue        Author         Reason for Modification
 
                     <p class="hyp">My original intention was to start with the PLCs, these being the most common bits of kit&nbsp;&mdash;&nbsp;it is still my intention to do this.</p>
 
-                    <p class="hyp">However, as part of this process I had to create a website to hold the publications and, being an engineer, I tried to do this with a certain precision and method that allowed the website to be reused for different publications. In short, I created a website template that can be used as needed to create a web book (<span class="first-use">you&rsquo;re looking at it now</span>).</p>
+                    <p class="hyp">However, before I could do this I was distracted; first by having to create a website to hold the publications and secondly by having a version control system to help me manage the development of the website.</p>
 
-                    <p class="hyp">This wasn&rsquo;t as easy as it sounds, I&rsquo;m no web developer and HTML and CSS were new to me; then there are all the other things: scalable images, hyphenation, displaying code fragments, web fonts, icon fonts, displaying formulae, creating an image gallery etc. &nbsp;&mdash;&nbsp; a whole load of stuff, all of it fiddly, difficult and time consuming.</p>
+                    <p class="hyp">It occurred to me that these two distractions might be useful to other people and I&rsquo;ve published them:</p>
 
-                    <p class="hyp">Then it occurred to me that the website itself could be useful; so I&rsquo;ve written it up and made it the first publication.</p>
-
-                    <p class="hyp">Click the above link (or <a class="hlink nohyp" href="1001-webdevelopment/index.html">here</a>) to go to the template website and have a look around.</p>
-
-                    <p class="hyp">I will add more publications as I go along&nbsp;&mdash;&nbsp;I do have a day job and these are detailed and serious publications&nbsp;&mdash;&nbsp;I&rsquo;m aiming to have the PLC one up and running by June (2017).</p>
-
-                    <p class="hyp">I hope you find this website useful.</p>
-
-                    <p>Michael Gledhill<br>October 2016</p>
                 </div>                                          <!-- End of section text area   -->
 
                 <div class="rg-col rg-span1-5">                 <!-- Start of right column   -->
@@ -289,6 +293,104 @@ Date          Issue        Author         Reason for Modification
             </div>                                              <!-- End of section content  -->
         </section>                                              <!-- End of section -->
 <!-- ========================================================================== [WP END] -->
+
+
+<!-- ************************************************************************** [WP INLINE]
+     SECTION INLINE
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--000000a">          <!-- Start of section -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row (section number & heading) -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used for subtitle) -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column (centre column) -->
+                    <!-- <div class="sub-title-overline"></div>      OVERLINE IF NEEDED -->
+                    <!-- <div class="sub-title-num-box"><h4></h4></div> -->
+                    <div class="sub-title-text-box"><h4>A website development template</h4></div>
+                </div>                                          <!-- End of subtitle column (centre column) -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used for subtitle) -->
+            </div>                                              <!-- End of Subtitle row -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5 section-text">    <!-- Start of section text area -->
+
+                    <p class="hyp">The first thing I had to do was create a website to hold the publications and, being an engineer, I tried to do this with a certain precision and method that allowed the website to be reused for different publications. In short, I created a website template that can be used as needed to create a web book (<span class="first-use">you&rsquo;re looking at it now</span>).</p>
+
+                    <p class="hyp">This wasn&rsquo;t as easy as it sounds, I&rsquo;m no web developer and HTML and CSS were new to me; then there are all the other things: scalable images, hyphenation, displaying code fragments, web fonts, icon fonts, displaying formulae, creating an image gallery &amp;c.&mdash;a whole load of stuff, all of it fiddly, difficult and time consuming.</p>
+
+                    <p class="hyp">It was at this point that it occurred to me that the website itself could be useful; so I wrote it up and made it the first publication.</p>
+
+                    <p class="hyp">Click the above link (or <a class="hlink nohyp" href="1001-webdevelopment/index.html">here</a>) to go to the template website and have a look around.</p>
+
+                    <p class="hyp"></p>
+
+                    <p class="hyp"></p>
+
+                </div>                                          <!-- End of section text area   -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column   -->
+                <!--     <aside class="aside-right">                 Start of right side bar -->
+                <!--         <p></p>                                 Side bar content        -->
+                <!--     </aside>                                    End of right side bar   -->
+                </div>                                          <!-- End of right column     -->
+            </div>                                              <!-- End of section content  -->
+        </section>                                              <!-- End of section -->
+<!-- ========================================================================== [WP END] -->
+
+
+<!-- ************************************************************************** [WP INLINE]
+     SECTION INLINE
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--000000b">          <!-- Start of section -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row (section number & heading) -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used for subtitle) -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column (centre column) -->
+                    <!-- <div class="sub-title-overline"></div>      OVERLINE IF NEEDED -->
+                    <!-- <div class="sub-title-num-box"><h4></h4></div> -->
+                    <div class="sub-title-text-box"><h4>A version control system with Brackets</h4></div>
+                </div>                                          <!-- End of subtitle column (centre column) -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used for subtitle) -->
+            </div>                                              <!-- End of Subtitle row -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5 section-text">    <!-- Start of section text area -->
+
+                    <p class="hyp">As I built the website, I found that I needed some sort of version control system and I settled on Git and GitHub. Git has a bit of a prehistoric feel to it, it is a command line system that is quite difficult to use; but then I found out that it could be used through the Brackets text editor (my text editor of choice for building the website) and this made everything much easier.</p>
+
+                    <p class="hyp">Git and GitHub (the online version of Git) still have a steep learning curve and it took a long time to understand them&mdash;I had to make lots of notes, do a lot of reading around the subject, try a lot of different thing and experiment with it until I had an understanding of what it all meant and how it worked.</p>
+
+                    <p class="hyp">And since I had written it all down, I again thought it might be useful to other people&mdash;so I decided to publish it, you can click the above link or see it <a class="hlink nohyp" href="1002-vcs/index.html">here</a>.</p>
+
+                    <div class="flourish"></div>                <!-- paragraph break with flourish -->
+
+                    <p class="hyp">I hope you find this website useful.</p>
+
+                    <p>Michael Gledhill<br>June 2017</p>
+
+                </div>                                          <!-- End of section text area   -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column   -->
+                <!--     <aside class="aside-right">                 Start of right side bar -->
+                <!--         <p></p>                                 Side bar content        -->
+                <!--     </aside>                                    End of right side bar   -->
+                </div>                                          <!-- End of right column     -->
+            </div>                                              <!-- End of section content  -->
+        </section>                                              <!-- End of section -->
+<!-- ========================================================================== [WP END] -->
+
+
 
 
 <!-- ************************************************************************** [WP 999901]
