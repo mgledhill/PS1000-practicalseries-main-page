@@ -2,7 +2,7 @@
 
 ###### A series of technical documents for engineers (and others)
 
-# Website main page (landing page) <img src="http://practicalseries.com/1000-home/11-resources/02-images/02-build-status/build-badge.svg">
+# Website main page (landing page) <img src="http://practicalseries.com/1000-home/11-resources/02-images/02-build-status/bs-R01.svg">
 
 <p align="center">
     <img width="300px" src="0-0201-repository-information/01-images/logo-lrg-min.png">
