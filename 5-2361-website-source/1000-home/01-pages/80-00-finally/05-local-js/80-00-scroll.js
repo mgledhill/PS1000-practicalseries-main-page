@@ -138,6 +138,10 @@ $(document).ready(function() {                  /* START OF PAGE READY FUNCTION 
        $('html, body').animate({scrollTop: $('#js--800400').offset().top -20}, 1000);
     });                                         /* END of scroll function */
 
+    $('.js--sc-800500b').click(function () {     /* START of scroll function */
+       $('html, body').animate({scrollTop: $('#js--800500b').offset().top -20}, 1000);
+    });                                         /* END of scroll function */
+
 
    /* ---------------------------------------------------------------------------
    SCROLL TO -  NON-STANDARD (INLINE) SECTIONS

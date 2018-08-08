@@ -994,6 +994,14 @@ img:not(.png) {
     content: "Note:"; float: left;          /* force the margin to the edge of the row */
     margin-left: -3.3rem;
 }
+
+.menu {                                     /* TEXT STYLE - code fragment */
+    font-family: "conc-c4-r";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+    color: #4F81BD;
+}
+
 .red {color: #C0504D}
 
 .list-num {                                 /* TEXT STYLE - Numbered list */
