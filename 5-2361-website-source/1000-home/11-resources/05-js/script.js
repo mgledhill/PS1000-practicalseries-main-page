@@ -51,6 +51,8 @@ This is a complete summary of all software modifications.
 
 Date          Issue        Author         Reason for Modification
 -------------------------------------------------------------------------------
+07 Aug 2018   R02          M. Gledhill    Social media icons manipulation added
+
 31 May 2017   P10          M. Gledhill    Migration to Git VCS
                                           FIRST PUBLISHED COMMIT
                                           Based on PS(LIVE-non VCS) P06.02
@@ -70,33 +72,36 @@ $(document).ready(function() {                      /* START OF PAGE READY FUNCT
 
 
 /* ****************************************************************************
-   FIXED NAVIGATION BAR (WAYPOINT FUNCTION)
+   SOCIAL MEDIA CHARACTER CHANGE
    ****************************************************************************
-   This function causes the navigation bar to be fixed at the top edge of the
-   screen once the user has scrolled down to waypoint js--fixed-nav (this is
-   generally the first section of the website after the TOC).
+   These function cause the social media icons in the footer to change from
+   outlined to filled characters
 
-   The waypoint function adds the class .fixed-nav to the <nav> element.
-
-   Similarly, the .fixed-nav class is removed when scrolling up to a point
-   above the first waypoint js--fixed-nav.
-
-   The waypoint function returns the direction of travel when passing the
-   waypoint specified. In this case an offset of 60px is added (the class is
-   added when the waypoint is within 60px of the top of the screen).
+   THe hover property is used four times (twice per icon) the first use adds
+   the filled icon during hover and removes it afterwards, the second use
+   removes the oultine icon during hover and restores it afterwards
    ************************************************************************* */
 
+    /* FACEBOOK ICON MANIPULATION */
+    $('#js--fbicon').hover(
+        function(){ $(this).addClass('ion-social-facebook'); },
+        function(){ $(this).removeClass('ion-social-facebook'); }
+    );
+    $('#js--fbicon').hover(
+        function(){ $(this).removeClass('ion-social-facebook-outline'); },
+        function(){ $(this).addClass('ion-social-facebook-outline'); }
+    );
 
-    $('.js--fixed-nav').waypoint(function (direction) { /* START of Waypoint function
-                                                           triggers as .js--fixed-nav class */
-        if (direction == "down") {                      /* check direction */
-            $('nav').addClass('fixed-nav');             /* if moving downward activate fixed-nav class */
-        } else {
-            $('nav').removeClass('fixed-nav');          /* if moving upward de-activate fixed-nav class */
-        }
-    }, {
-    offset: '70px'                                      /* check for waypoint 60px before top of screen */
-    });                                                 /* END of Waypoint function */
+    /* TWITTER ICON MANIPULATION */
+    $('#js--twicon').hover(
+        function(){ $(this).addClass('ion-social-twitter'); },
+        function(){ $(this).removeClass('ion-social-twitter'); }
+    );
+    $('#js--twicon').hover(
+        function(){ $(this).removeClass('ion-social-twitter-outline'); },
+        function(){ $(this).addClass('ion-social-twitter-outline'); }
+    );
+
 
 /* ****************************************************************************
    SWAP SVG IMAGES FOR PNG IMAGES IF VIEWED WITH INTERNET EXPLORER
@@ -205,5 +210,38 @@ $(document).ready(function() {                      /* START OF PAGE READY FUNCT
       return false;
     }
 /* ************************************************************************* */
+
+
+/* ****************************************************************************
+   FIXED NAVIGATION BAR (WAYPOINT FUNCTION)
+   ****************************************************************************
+   This function causes the navigation bar to be fixed at the top edge of the
+   screen once the user has scrolled down to waypoint js--fixed-nav (this is
+   generally the first section of the website after the TOC).
+
+   The waypoint function adds the class .fixed-nav to the <nav> element.
+
+   Similarly, the .fixed-nav class is removed when scrolling up to a point
+   above the first waypoint js--fixed-nav.
+
+   The waypoint function returns the direction of travel when passing the
+   waypoint specified. In this case an offset of 60px is added (the class is
+   added when the waypoint is within 60px of the top of the screen).
+   ************************************************************************* */
+
+
+    $('.js--fixed-nav').waypoint(function (direction) { /* START of Waypoint function
+                                                           triggers as .js--fixed-nav class */
+        if (direction == "down") {                      /* check direction */
+            $('nav').addClass('fixed-nav');             /* if moving downward activate fixed-nav class */
+        } else {
+            $('nav').removeClass('fixed-nav');          /* if moving upward de-activate fixed-nav class */
+        }
+    }, {
+    offset: '70px'                                      /* check for waypoint 60px before top of screen */
+    });                                                 /* END of Waypoint function */
+
+
+
 
 });                                                 /* END OF PAGE READY FUNCTION */

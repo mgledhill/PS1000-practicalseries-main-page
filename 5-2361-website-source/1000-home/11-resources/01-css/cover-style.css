@@ -81,6 +81,8 @@ This is a complete summary of all software modifications.
 
 Date          Issue        Author         Reason for Modification
 -------------------------------------------------------------------------------
+02 Aug 2018   R02          M. Gledhill    Social media icons added
+
 31 May 2017   P10          M. Gledhill    Migration to Git VCS
                                           FIRST PUBLISHED COMMIT
                                           Based on PS(LIVE-non VCS) P06.02
@@ -91,7 +93,7 @@ Date          Issue        Author         Reason for Modification
                                             name change (.aside-right-rev)
                                           - .aside-left-rev added with bld stat
 ------------------------------------------------------------------------------- */
-.aside-right-rev:after { content: "cover-style.css\00a0\2014\00a0 P10"; }      /* CSS REVISION NUMBER */
+.aside-right-rev:after { content: "cover-style.css\00a0\2014\00a0 R02"; }      /* CSS REVISION NUMBER */
 
 /* ****************************************************************************
    SET THE BASE FONT SIZE AND MAKE RESPONSIVE
@@ -134,6 +136,8 @@ html {
 
 h1, h2, h3, h4, h5, h6 {                    /* set standard headings */
     font-family: 'conc-t3-r';
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
     font-weight:normal;
     font-size: 100%
 }
@@ -416,6 +420,42 @@ body {
     color: #ff0000;
 }
 
+/* ****************************************************************************
+   SOCIAL LINKS
+   ****************************************************************************
+   There are two social media links (Facebook and Twitter) in the footer
+   section, these use the ionicon set of fonts to display the relevent logos
+
+   This handles the positioning of the icons, their colour and their spacing.
+
+   There is some JS to swap outline icons to filled icons on hover, see
+   script.js
+
+   ************************************************************************* */
+
+.social-links {
+    list-style: none;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.social-links li {
+    display:inline;
+    margin-left: 1rem
+}
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    color: #4C6C9C;
+    font-size: 1.3rem;
+}
+.ion-social-facebook {
+    color: #3b5998;
+}
+.ion-social-twitter {
+    color: #00aced;
+}
+
 
 
 /* ****************************************************************************
@@ -667,6 +707,8 @@ img:not(.png) {
     list-style: none;
     color: #4C6C9C;
     font-family: "conc-t3-r";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
     font-size: 0.8rem;
 }
 .toc-line li a:link,                        /* format the TOC list text */
@@ -682,6 +724,8 @@ img:not(.png) {
     column-count: 2;
     color: #4C6C9C;
     font-family: "conc-t3-r";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
     font-size: 0.8rem;
 }
 .toc-list li a:link,                        /* format the TOC list text */
@@ -1463,7 +1507,12 @@ tr.no-border th {                           /* no-bottom border */
     padding: 0.25rem 0.2rem;
     line-height: 130%;
 }
-.table-fnote td em {font-family: "eqtu-ta-r"; font-size: 0.7rem;}
+.table-fnote td em {
+    font-family: "conc-t4-r";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+    font-size: 0.7rem;
+}
 
 .fnote-top {border-top: 1px solid #404030;}
 
@@ -1725,6 +1774,8 @@ tr.no-border th {                           /* no-bottom border */
     width: 100.4%;                          /* make wider than body text to cover right border */
     background-color: #fbfaf6;
     font-family: "conc-t3-r";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
     font-size: 0.85rem;
     line-height: 100%;
  }

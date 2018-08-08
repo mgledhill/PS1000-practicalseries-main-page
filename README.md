@@ -2,7 +2,7 @@
 
 ###### A series of technical documents for engineers (and others)
 
-# Website main page (landing page) <img src="http://practicalseries.com/1000-home/11-resources/02-images/02-build-status/bs-R01.svg">
+# Website main page (landing page) <img src="https://practicalseries.com/1000-home/11-resources/02-images/02-build-status/1000-mainpage/bs-R02.svg">
 
 <p align="center">
     <img width="300px" src="0-0201-repository-information/01-images/logo-lrg-min.png">
@@ -22,6 +22,7 @@ Each additional publication has its own repository. Currently there are the foll
 1.	PS1000-practicalseries-main-page (this repository)
 2.	PS1001-website-development-template
 3.	PS1002-brackets-git-and-github-vcs
+4.	PS1003-landrover-owners-manual
 
 ## Installation
 
