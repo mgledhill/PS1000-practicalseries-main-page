@@ -49,6 +49,9 @@ This is a complete summary of all software modifications.
 
 Date          Issue        Author         Reason for Modification
 -------------------------------------------------------------------------------
+10 May 2018   R03          M. Gledhill    Third release web development
+                                          complete
+
 07 Aug 2018   R02          M. Gledhill    Second release (no changes)
 
 31 May 2017   P10          M. Gledhill    Migration to Git VCS
@@ -75,7 +78,7 @@ $(document).ready(function() {                  /* START OF PAGE READY FUNCTION 
    **************************************************************************** */
 
     $('.aside-right-rev').append (
-        "<p>cover-scroll.js&nbsp;&mdash;&nbsp;R02</p>" /* LOCAL JS REVISION NUMBER */
+        "<p>cover-scroll.js&nbsp;&mdash;&nbsp;R03</p>" /* LOCAL JS REVISION NUMBER */
     );
 
 
@@ -128,6 +131,10 @@ $(document).ready(function() {                  /* START OF PAGE READY FUNCTION 
 
     $('.js--sc-000101').click(function () {     /* START of scroll function */
        $('html, body').animate({scrollTop: $('#js--000101').offset().top }, 1000);
+    });                                         /* END of scroll function */
+
+    $('.js--sc-000102').click(function () {     /* START of scroll function */
+       $('html, body').animate({scrollTop: $('#js--000102').offset().top }, 1000);
     });                                         /* END of scroll function */
 
 

@@ -49,6 +49,14 @@ This is a complete summary of all software modifications.
 
 Date          Issue        Author         Reason for Modification
 -------------------------------------------------------------------------------
+10 May 2018   R03          M. Gledhill    Third release web development
+                                          complete
+
+08 Aug 2018   R02          M. Gledhill    Site updated to HTTPS
+                                          Privacy policy added
+
+20 Oct 2017   R01          M. Gledhill    First release
+
 31 May 2017   P10          M. Gledhill    Migration to Git VCS
                                           FIRST PUBLISHED COMMIT
                                           Based on PS(LIVE-non VCS) P06.02
@@ -75,7 +83,7 @@ $(document).ready(function() {                  /* START OF PAGE READY FUNCTION 
    **************************************************************************** */
 
     $('.aside-right-rev').append (
-        "<p>scroll.js&nbsp;&mdash;&nbsp;R02</p>" /* LOCAL JS REVISION NUMBER */
+        "<p>scroll.js&nbsp;&mdash;&nbsp;R03</p>" /* LOCAL JS REVISION NUMBER */
     );
 
 

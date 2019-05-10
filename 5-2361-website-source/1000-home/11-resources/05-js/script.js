@@ -51,7 +51,13 @@ This is a complete summary of all software modifications.
 
 Date          Issue        Author         Reason for Modification
 -------------------------------------------------------------------------------
-07 Aug 2018   R02          M. Gledhill    Social media icons manipulation added
+10 May 2018   R03          M. Gledhill    Third release web development
+                                          complete
+
+08 Aug 2018   R02          M. Gledhill    Site updated to HTTPS
+                                          Privacy policy added
+
+20 Oct 2017   R01          M. Gledhill    First release
 
 31 May 2017   P10          M. Gledhill    Migration to Git VCS
                                           FIRST PUBLISHED COMMIT
@@ -230,7 +236,7 @@ $(document).ready(function() {                      /* START OF PAGE READY FUNCT
    ************************************************************************* */
 
 
-    $('.js--fixed-nav').waypoint(function (direction) { /* START of Waypoint function
+    $('#js--fixed-nav').waypoint(function (direction) { /* START of Waypoint function
                                                            triggers as .js--fixed-nav class */
         if (direction == "down") {                      /* check direction */
             $('nav').addClass('fixed-nav');             /* if moving downward activate fixed-nav class */

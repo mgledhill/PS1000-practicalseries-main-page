@@ -2,10 +2,10 @@
 
 ###### A series of technical documents for engineers (and others)
 
-# Website main page (landing page) <img src="https://practicalseries.com/1000-home/11-resources/02-images/02-build-status/1000-mainpage/bs-R02.svg">
+# Website main page (landing page) <img src="https://img.shields.io/badge/Released-R03-41BB13.svg">
 
 <p align="center">
-    <img width="300px" src="0-0201-repository-information/01-images/logo-lrg-min.png">
+    <img src="https://img.shields.io/badge/Released-R03-41BB13.svg">
 </p>
 
 This is the website source code for the Practical Series of Publications website:

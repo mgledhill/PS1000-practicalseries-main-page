@@ -47,6 +47,9 @@ This is a complete summary of all software modifications.
 
 Date          Issue        Author         Reason for Modification
 *******************************************************************************
+10 May 2018   R03          M. Gledhill    Third release web development
+                                          complete
+
 08 Aug 2018   R02.01       M. Gledhill    Typographical corrections
 
 08 Aug 2018   R02          M. Gledhill    Site updated to HTTPS
@@ -84,7 +87,7 @@ Date          Issue        Author         Reason for Modification
      HEAD SCRIPT AREA
      ***********************************************************************-->
         <!-- jQuery Library -->         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <!-- Waypoints (fixed nav)      <script src="1000-home/21-global/05-js/jquery.waypoints.min.js" defer></script> -->
+        <!-- Waypoints (fixed nav) -->  <script src="1000-home/21-global/05-js/jquery.waypoints.min.js" defer></script>
         <!-- Prettify (main)            <script src="1000-home/21-global/05-js/run_prettify.js?autoload=true&amp;lang=css" defer></script> -->
         <!-- Prettify (Language)        <script src="1000-home/21-global/05-js/lang-css.js" defer></script> -->
         <!-- Hyphenator -->             <script src="1000-home/21-global/05-js/hyphenator.js"></script>
@@ -137,19 +140,31 @@ Date          Issue        Author         Reason for Modification
      ***********************************************************************-->
 
         <header id="js--000000">
-<!-- ************************************************************************** [WP 000001]
+<!-- ************************************************************************** [WP TOPNAV]
      TOP NAVIGATION (ABOVE CONTENTS LIST)
      ***********************************************************************-->
 
-            <nav class="nav-cover">                             <!-- Start of top navigation bar (set transparent on cover page) -->
-                <div class="top-nav">                           <!-- Start of top navigation row -->
-                    <div class="rg-row">                        <!-- Start of navigation button row -->
+            <nav class="nav-cover">                             <!-- Start of top nav bar     -->
+                <div class="top-nav">                           <!-- Start of top nav row     -->
+                    <div class="rg-row">                        <!-- Start of nav button row  -->
                         <!-- Button 01 - Previous Section -->
-                        <div class="nav-blank" ></div>
-                                            </div>                                      <!-- End of navigation button row -->
-                </div>                                          <!-- End of top navigation row -->
-            </nav>                                              <!-- End of top navigation bar -->
-<!-- ========================================================================== [WP END] -->
+                        <div class="nav-wide" ></div>
+                        <!-- Button 02 - Previous Chapter -->
+                        <div class="nav-wide" ></div>
+                        <!-- Button 03 - Home wide (hidden when fixed nav activates) -->
+                        <div class="nav-wide nav-home" ></div>
+                        <!-- Button 03a - Top narrow (hidden until fixed nav activates) -->
+                        <a class="nav-narrow js--sc-000000" href="#"><span class="top-nav-icon">t</span><span class="top-nav-text">Top</span></a>
+                        <!-- Button 03b - Home narrow (hidden until fixed nav activates) -->
+                        <div class="nav-narrow"></div>
+                        <!-- Button 04 - Next Chapter -->
+                        <div class="nav-wide" ></div>
+                        <!-- Button 05 - Next section -->
+                        <div class="nav-wide" ></div>
+                    </div>                                      <!-- End of nav button row    -->
+                </div>                                          <!-- End of top nav row       -->
+            </nav>                                              <!-- End of top nav bar       -->
+<!-- ========================================================================== [WP END]      -->
 
 
 <!-- ************************************************************************** [WP 000002]
@@ -158,25 +173,24 @@ Date          Issue        Author         Reason for Modification
 
             <div class="rg-row">                                <!-- Start of cover row -->
                  <div class="rg-col rg-span1-5">
-                    <aside class="aside-left aside-left-rev" style="margin-top: 1.6rem;">            <!-- Start of left side bar -->
-                        <img src="https://practicalseries.com/1000-home/11-resources/02-images/02-build-status/1000-mainpage/bs-R02.svg" alt="Build info"><!-- Build status -->
-                    </aside>                                    <!-- End of left side bar   -->
+                    <aside class="rev-badge" style="margin-top: 4rem;">
+                        <img src="https://img.shields.io/badge/Released-R03-41BB13.svg" alt="Build">
+                    </aside>
                 </div>                                          <!-- End of Left column -->
                 <div class="rg-col rg-span3-5">                 <!-- Start of Cover area (centre column) -->
                     <div class="cover-overline"></div>          <!-- Overline bar -->
                     <div class="cover-title">                   <!-- Start of cover title area -->
-                        <h1>Practical Series Publications</h1>               <!-- Main title -->
-                        <h2>A series of technical documents for engineers<br>(and others)</h2>             <!-- Subtitle -->
-                        <h3>by Michael Gledhill</h3>            <!-- Author -->
+                        <h1 style="font-size: 2.8rem">Practical Series Publications</h1>               <!-- Main title -->
+                        <h2 style="font-size: 1.1rem">A series of technical documents for engineers<br>(and others)</h2>             <!-- Subtitle -->
+                        <h3 style="font-size: 1rem">by Michael Gledhill</h3>            <!-- Author -->
                     </div>                                      <!-- End of cover title area -->
                     <figure class="cover-fig">                  <!-- Start of cover figure -->
                         <img src="1000-home/01-pages/00-00-index/02-images/fig-00-logo-paths.svg" alt="cover logo">
                     </figure>                                   <!-- End of cover figure -->
                 </div>                                          <!-- End of cover area (centre column -->
                 <div class="rg-col rg-span1-5">                 <!-- Start of right column  -->
-                    <aside class="aside-right-rev" style="margin-top: 1.6rem">             <!-- Start of right side bar -->
-<!--REVISION-->         <p>Rev: 1000&nbsp;&mdash;&nbsp;R02.01</p>  <!-- Revision information    -->
-                    </aside>                                    <!-- End of right side bar   -->
+                    <aside class="aside-right-rev" style="margin-top: 4rem;">
+                    </aside>                                    <!-- End of right side bar    -->
                 </div>                                          <!-- End of right column  -->
             </div>                                              <!-- End of cover row -->
 
@@ -197,6 +211,9 @@ Date          Issue        Author         Reason for Modification
                     <ul class="toc-line">                       <!-- Start of full width TOC (level 1) -->
                         <li><a class="js--sc-000100" href="index.html#js--000100">  <!-- TOC link start -->
                                <div class="toc-lev"><span class="toc-lev1lt-num"></span><span class="toc-lev1lt-text">A note by the author</span></div></a>
+                        </li>                                   <!-- TOC link end   -->
+                        <li><a class="js--sc-000102" href="index.html#js--000102">  <!-- TOC link start -->
+                               <div class="toc-lev"><span class="toc-lev1lt-num"></span><span class="toc-lev1lt-text">Additional note (May 2019)</span></div></a>
                         </li>                                   <!-- TOC link end   -->
                         <li><a class="js--sc-000101" href="index.html#js--000101">  <!-- TOC link start -->
                                <div class="toc-lev"><span class="toc-lev1lt-num"></span><span class="toc-lev1lt-text">Additional note (August 2018)</span></div></a>
@@ -256,10 +273,10 @@ Date          Issue        Author         Reason for Modification
 
 
 
-<!-- ************************************************************************** [WP fixed-nav]
+<!-- ************************************************************************** [WP FIXEDNAV]
      FIXED NAVIGATION BAR CHANGEOVER POINT
      ***********************************************************************-->
-        <!-- Not needed on cover page -->
+        <div id="js--fixed-nav"></div>                       <!-- Determines fixed navigation point -->
 <!-- ========================================================================== [WP END] -->
 
 
@@ -575,6 +592,54 @@ Date          Issue        Author         Reason for Modification
 <!-- ========================================================================== [WP END] -->
 
 <!-- ************************************************************************** [WP 000101]
+     SECTION START - AUTHOR'S NOTE (MAY 19)
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--000102">                     <!-- Start of section -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row (section number & heaing) -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used for subtitle) -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column (centre column) -->
+                    <div class="sub-title-thinline"></div>      <!-- Thin overline (after TOC) -->
+                    <div class="sub-title-num-box"><h6>Authors note May 2019</h6></div>   <!-- Heading 6 is a placehoder heading needed in sections without a heading to satisfy html validation -->
+                <!--     <div class="sub-title-text-box"><h2>Text</h2></div> -->
+                </div>                                          <!-- End of subtitle column (centre column) -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used for subtitle) -->
+            </div>                                              <!-- End of Subtitle row -->
+
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                    <aside class="aside-head">                  <!-- Start of left side bar   -->
+                        <h2>additional note (May 2019)</h2>           <!-- Side bar content         -->
+                    </aside>                                    <!-- End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5 section-text">    <!-- Start of section text area -->
+
+                    <p class="hyp">Well, I’ve done it; I’ve finally finished the <a class="hlink nohyp" href="http://practicalseries.com/1001-webdevelopment/index.html">web development</a> section. That’s three years I’m not getting back.</p>
+
+                    <p class="hyp">Anyway, there it is. I hope it’s worth it and I hope you find it useful.</p>
+
+                    <p class="hyp">Next I’m going to write some of things I set this website up for in the first place: ob-scure engineering documents.</p>
+
+                    <p class="hyp">Michael Gledhill<br>May 2019&nbsp;&mdash;&nbsp;Chester</p>
+
+                </div>                                          <!-- End of section text area   -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column   -->
+                <!--     <aside class="aside-right">                 Start of right side bar -->
+                <!--         <p></p>                                 Side bar content        -->
+                <!--     </aside>                                    End of right side bar   -->
+                </div>                                          <!-- End of right column     -->
+            </div>                                              <!-- End of section content  -->
+        </section>                                              <!-- End of section -->
+<!-- ========================================================================== [WP END] -->
+
+
+
+
+
+<!-- ************************************************************************** [WP 000101]
      SECTION START - AUTHOR'S NOTE (AUG 18)
      ***********************************************************************-->
 
@@ -583,7 +648,7 @@ Date          Issue        Author         Reason for Modification
                 <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used for subtitle) -->
                 <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column (centre column) -->
                     <div class="sub-title-thinline"></div>      <!-- Thin overline (after TOC) -->
-                    <div class="sub-title-num-box"><h6>Placeholder</h6></div>   <!-- Heading 6 is a placehoder heading needed in sections without a heading to satisfy html validation -->
+                    <div class="sub-title-num-box"><h6>Authors note august 2018</h6></div>   <!-- Heading 6 is a placehoder heading needed in sections without a heading to satisfy html validation -->
                 <!--     <div class="sub-title-text-box"><h2>Text</h2></div> -->
                 </div>                                          <!-- End of subtitle column (centre column) -->
                 <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used for subtitle) -->
